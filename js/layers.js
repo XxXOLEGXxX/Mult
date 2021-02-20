@@ -14,7 +14,7 @@ addLayer("m", {
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent() { return new Decimal(1).div(new Decimal(1024).sub(player.b.points)) }, // Prestige currency exponent
     update(diff) {
-    if(hasMilestone("e", 2)) addPoints("m", new Decimal(diff).times(tmp.m.resetGain).div(20))
+    if(hasMilestone("e", 2)) addPoints("m", new Decimal(diff).times(tmp.m.resetGain).div(4))
 	},
 	gainMult() { // Calculate the multiplier for main currency from bonuses
         multi = new Decimal(1).add(player.b.points)
@@ -283,7 +283,7 @@ addLayer("e", {
 		},
 		2: {
 			requirementDescription: "3 expansion point",
-			effectDescription: "Passively generates 5% mp/s and adds 2 more upgrades",
+			effectDescription: "Passively generates 25% mp/s and adds 2 more upgrades",
 			done() { return player.e.points.gte(3) }
 		},
 		3: {
