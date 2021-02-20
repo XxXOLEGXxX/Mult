@@ -183,7 +183,7 @@ addLayer("a", {
 	baseAmount() {return player.points},
     row: "side", // Row the layer is in on the tree (0 is the first row)
     layerShown(){return true},
-	tabFormat: ["achievements"],
+	tabFormat: ["blank", "blank", "achievements"],
 	achievements: {
 		rows: 2,
 		cols: 6,
