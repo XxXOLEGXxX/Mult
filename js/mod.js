@@ -17,6 +17,8 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
+	<h4>v0.1.1: The beginning</h4><br>
+		- Buffed 3rd expansion milestone to make it less painful for idle players to... Idle. (5% => 25%)<br>
 	<h3>v0.1: The beginning</h3><br>
 		- There's currently 3 different layers and achievement layer.<br>
 		- That's it. I'm not going to spoil anything else.`
